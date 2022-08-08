@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.kaschools.com/kacss/4/ka.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Internal CSS */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .ka-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .ka-sidebar {
+            width: 120px;
+            background: #222;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+    <title>Ana Sayfa | Kam Ata</title>
+</head>
+
+<body class="ka-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="ka-sidebar ka-bar-block ka-small ka-hide-small ka-center">
+        <!-- Avatar image in top left corner -->
+        <img src="img/kam_ata-img.jpg" alt="kam-ata-image" style="width:100%">
+        <a href="#" class="ka-bar-item ka-button ka-padding-large ka-black">
+            <i class="fa fa-home ka-xxlarge">
+            </i>
+            <p>ANA SAYFA</p>
+        </a>
+        <a href="#about" class="ka-bar-item ka-button ka-padding-large ka-hover-black">
+            <i class="fa fa-user ka-xxlarge"></i>
+            <p>HAKKINDA</p>
+        </a>
+        <a href="#photos" class="ka-bar-item ka-bar-item ka-padding-large ka-hover-black">
+            <i class="fa fa-eye ka-xxlarge"></i>
+            <p>GALERİ</p>
+        </a>
+        <a href="#photos" class="ka-bar-item ka-bar-item ka-padding-large ka-hover-black">
+            <i class="fa fa-envelope ka-xxlarge"></i>
+            <p>İLETİŞİM</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="ka-top ka-hide-large ka-hide-medium" id="myNavbar">
+        <div class="ka-bar ka-black ka-opacity ka-hover-opacity-off ka-center ka-small">
+            <a href="#" class="ka-bar-item ka-button" style="width:25% !important">ANA SAYFA</a>
+            <a href="#about" class="ka-bar-item ka-button" style="width:25% !important">HAKKINDA</a>
+            <a href="#photos" class="ka-bar-item ka-button" style="width:25% !important">GALERİ</a>
+            <a href="#contact" class="ka-bar-item ka-button" style="width:25% !important">İLETİŞİM</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="ka-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="ka-container ka-padding-32 ka-center ka-black" id="home">
+            <h1 class="ka-jumbo"><span class="ka-hide-small"></span>Kam Ata</h1>
+            <p>Ne büyük bir savaş ne kıyâmet
+                Susmadı âdem doymadı âdem
+                İrle girmiş kanına
+                Tamu olmuş ruhuna</p>
+            <img src="/img/kam_ata-img.jpg" alt="kam-ata-image" class="ka-image" width="992" height="1108">
+        </header>
+
+        <!-- About Section -->
+        <div class="ka-content ka-justify ka-text-grey ka-padding-64" id="about">
+            <h2 class="ka-text-light-grey">Kam Ata</h2>
+            <hr style="width:200px" class="ka-opacity">
+            <p>
+                Geleneksel Orta Asya enstrümanlarının ritüelistik dokusunu merkez alan
+                Kam Ata, Dark Wave, Post-Punk gibi farklı türlerden etkileri de içinde barındıran
+                ilk albümü Tengri Teg‘i yayınladı.
+                <br>
+                Tolga Ayıklar, Yaren Eren Budak, Murat Yakupoğlu ve Müge Çığ’dan oluşan grubun müziği,
+                dinleyicilerini zamanın ve mekanın dışında bir yolculuğa çıkarıyor. Orta Asya müziklerine,
+                kültürlerine ve inanışlarına ilgili olanların bilhassa dinlemesi gereken bu albüm,
+                gerek kullandığı enstrümanlar, gerekse müzikal ve sözel içeriğiyle kendine has bir üsluba sahip.
+            </p>
+        </div>
+        <h3 class="ka-padding-24 ka-text-light-grey">Grup Üyeleri</h3>  
+        <a href="http://www.kameraarkasi.org/yonetmenler/ahmettolgaayiklar.html" target="">
+            <img src="/img/tolga-avatar.jpg" alt="Avatar" class="ka-left ka-circle ka-margin-right" style="width:80px">
+        </a> 
+        <p><span class="ka-large ka-margin-right">Ahmet Tolga Ayıklar.</span> Müzisyen</p>
+        <p>
+            karakamata
+            Musician / Kam Ata @kamata_official <br> 
+            Independent Filmmaker / Atlı Film @atli.film <br>
+            Storyteller / Artship <br>
+            Independent Turcology Researcher</p>
+    
+        <img src="/kaimages/avatar_g2.jpg" alt="Avatar" class="ka-left ka-circle ka-margin-right" style="width:80px">
+        <p><span class="ka-large ka-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than John Doe.</p>
+    </div>
+</body>
+
+</html>
