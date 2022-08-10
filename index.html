@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 
 <head>
+    <title>Ana Sayfa | DnD5e</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.kaschools.com/kacss/4/ka.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <style>
-        /* Internal CSS */
         body,
         h1,
         h2,
@@ -18,111 +15,211 @@
         h4,
         h5,
         h6 {
-            font-family: "Montserrat", sans-serif
+            font-family: "Karma", sans-serif
         }
 
-        .ka-row-padding img {
-            margin-bottom: 12px
-        }
-
-        /* Set the width of the sidebar to 120px */
-        .ka-sidebar {
-            width: 120px;
-            background: #222;
-        }
-
-        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-        #main {
-            margin-left: 120px
-        }
-
-        /* Remove margins from "page content" on small screens */
-        @media only screen and (max-width: 600px) {
-            #main {
-                margin-left: 0
-            }
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
         }
     </style>
-    <title>Ana Sayfa | Kam Ata</title>
 </head>
 
-<body class="ka-black">
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="ka-sidebar ka-bar-block ka-small ka-hide-small ka-center">
-        <!-- Avatar image in top left corner -->
-        <img src="img/kam_ata-img.jpg" alt="kam-ata-image" style="width:100%">
-        <a href="#" class="ka-bar-item ka-button ka-padding-large ka-black">
-            <i class="fa fa-home ka-xxlarge">
-            </i>
-            <p>ANA SAYFA</p>
-        </a>
-        <a href="#about" class="ka-bar-item ka-button ka-padding-large ka-hover-black">
-            <i class="fa fa-user ka-xxlarge"></i>
-            <p>HAKKINDA</p>
-        </a>
-        <a href="#photos" class="ka-bar-item ka-bar-item ka-padding-large ka-hover-black">
-            <i class="fa fa-eye ka-xxlarge"></i>
-            <p>GALERİ</p>
-        </a>
-        <a href="#photos" class="ka-bar-item ka-bar-item ka-padding-large ka-hover-black">
-            <i class="fa fa-envelope ka-xxlarge"></i>
-            <p>İLETİŞİM</p>
-        </a>
+<body>
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+        style="display:none;z-index:2;width:40%;min-width:250px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Kapat</a>
+        <a href="#sinif" onclick="w3_close()" class="w3-bar-item w3-button">Sınıflar</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Hakkında</a>
     </nav>
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="ka-top ka-hide-large ka-hide-medium" id="myNavbar">
-        <div class="ka-bar ka-black ka-opacity ka-hover-opacity-off ka-center ka-small">
-            <a href="#" class="ka-bar-item ka-button" style="width:25% !important">ANA SAYFA</a>
-            <a href="#about" class="ka-bar-item ka-button" style="width:25% !important">HAKKINDA</a>
-            <a href="#photos" class="ka-bar-item ka-button" style="width:25% !important">GALERİ</a>
-            <a href="#contact" class="ka-bar-item ka-button" style="width:25% !important">İLETİŞİM</a>
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
         </div>
     </div>
 
-    <!-- Page Content -->
-    <div class="ka-padding-large" id="main">
-        <!-- Header/Home -->
-        <header class="ka-container ka-padding-32 ka-center ka-black" id="home">
-            <h1 class="ka-jumbo"><span class="ka-hide-small"></span>Kam Ata</h1>
-            <p>Ne büyük bir savaş ne kıyâmet
-                Susmadı âdem doymadı âdem
-                İrle girmiş kanına
-                Tamu olmuş ruhuna</p>
-            <img src="/img/kam_ata-img.jpg" alt="kam-ata-image" class="ka-image" width="992" height="1108">
-        </header>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter">
+                <img src="/img/logo/barbarian-logo.png" alt="Barbarian" style="width: 250px; height: 450px;">
+                <h3>Barbarian</h3>
+                <p>
+                    İlkel arka plana sahip, savaş öfkesine girebilen şiddetli bir savaşçı
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/bard-avatar.png" alt="Bard" style="width: 250px; height: 450px;">
+                <h3>Bard</h3>
+                <p>
+                    Gücü yaratılışın müziğini yankılayan ilham verici bir sihirbaz
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/cleric-avatar.png" alt="Cleric" style="width: 250px; height: 450px;">
+                <h3>Cleric</h3>
+                <p>
+                    Daha yüksek bir gücün hizmetinde ilahi büyü kullanan bir rahip şampiyonu
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/druid-avatar.png" alt="Druid" style="width: 250px; height: 450px;">
+                <h3>Druid</h3>
+                <p> 
+                    Doğanın güçlerini kullanan ve hayvan formlarını benimseyen Old Faith'in(Eski İnanç) bir rahibi
+                </p>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="/img/fighter-avatar.png" alt="Fighter" style="width: 250px; height: 450px;">
+                <h3>Fighter</h3>
+                <p>
+                    Çeşitli silahlar ve zırhlarla yetenekli bir dövüş ustası
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/monk-avatar.png" alt="Monk" style="width: 250px; height: 450px;">
+                <h3>Monk</h3>
+                <p>
+                    Fiziksel ve ruhsal mükemmellik arayışında vücudun gücünü kullanan bir dövüş sanatları ustası
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/ranger-avatar.png" alt="Ranger" style="width: 250px; height: 450px;">
+                <h3>Ranger</h3>
+                <p>
+                    Medeniyetin sınırlarında tehditlerle savaşan bir savaşçı
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/rogue-avatar.png" alt="Rogue" style="width: 250px; height: 450px;">
+                <h3>Rogue</h3>
+                <p>
+                    Engelleri ve düşmanları aşmak için gizlilik ve hile kullanan bir alçak
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/sorcerer-avatar.png" alt="Sorcerer" style="width: 250px; height: 450px;">
+                <h3>Sorcerer</h3>
+                <p>
+                    Bir lütuftan veya soydan gelen sihirden yararlanan bir büyücü
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/warlock-avatar.png" alt="Warlock" style="width: 250px; height: 450px;">
+                <h3>Warlock</h3>
+                <p>
+                    Düzlem dışı bir varlıkla yapılan pazarlıktan türetilen bir sihir ustası
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/img/wizard-avatar.png" alt="Wizard" style="width: 250px; height: 450px;">
+                <h3>Wizard</h3>
+                <p>
+                    Gerçekliğin yapılarını manipüle edebilen bilimsel bir sihir kullanıcısı
+                </p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <hr id="about">
 
         <!-- About Section -->
-        <div class="ka-content ka-justify ka-text-grey ka-padding-64" id="about">
-            <h2 class="ka-text-light-grey">Kam Ata</h2>
-            <hr style="width:200px" class="ka-opacity">
-            <p>
-                Geleneksel Orta Asya enstrümanlarının ritüelistik dokusunu merkez alan
-                Kam Ata, Dark Wave, Post-Punk gibi farklı türlerden etkileri de içinde barındıran
-                ilk albümü Tengri Teg‘i yayınladı.
-                <br>
-                Tolga Ayıklar, Yaren Eren Budak, Murat Yakupoğlu ve Müge Çığ’dan oluşan grubun müziği,
-                dinleyicilerini zamanın ve mekanın dışında bir yolculuğa çıkarıyor. Orta Asya müziklerine,
-                kültürlerine ve inanışlarına ilgili olanların bilhassa dinlemesi gereken bu albüm,
-                gerek kullandığı enstrümanlar, gerekse müzikal ve sözel içeriğiyle kendine has bir üsluba sahip.
-            </p>
+        <div class="w3-container w3-padding-32 w3-center">
+            <h3>About Me, The Food Man</h3><br>
+            <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800"
+                height="533">
+            <div class="w3-padding-32">
+                <h4><b>I am Who I Am!</b></h4>
+                <h6><i>With Passion For Real, Good Food</i></h6>
+                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest
+                    of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed
+                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+                    fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                    ultricies congue gravida diam non fringilla.</p>
+            </div>
         </div>
-        <h3 class="ka-padding-24 ka-text-light-grey">Grup Üyeleri</h3>  
-        <a href="http://www.kameraarkasi.org/yonetmenler/ahmettolgaayiklar.html" target="">
-            <img src="/img/tolga-avatar.jpg" alt="Avatar" class="ka-left ka-circle ka-margin-right" style="width:80px">
-        </a> 
-        <p><span class="ka-large ka-margin-right">Ahmet Tolga Ayıklar.</span> Müzisyen</p>
-        <p>
-            karakamata
-            Musician / Kam Ata @kamata_official <br> 
-            Independent Filmmaker / Atlı Film @atli.film <br>
-            Storyteller / Artship <br>
-            Independent Turcology Researcher</p>
-    
-        <img src="/kaimages/avatar_g2.jpg" alt="Avatar" class="ka-left ka-circle ka-margin-right" style="width:80px">
-        <p><span class="ka-large ka-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-        <p>No one is better than John Doe.</p>
+        <hr>
+
+        <!-- Footer -->
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="w3-third">
+                <h3>FOOTER</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </div>
+
+            <div class="w3-third">
+                <h3>BLOG POSTS</h3>
+                <ul class="w3-ul w3-hoverable">
+                    <li class="w3-padding-16">
+                        <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Lorem</span><br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                    <li class="w3-padding-16">
+                        <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Ipsum</span><br>
+                        <span>Praes tinci sed</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-serif">
+                <h3>POPULAR TAGS</h3>
+                <p>
+                    <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span
+                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+                </p>
+            </div>
+        </footer>
+
+        <!-- End page content -->
     </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>
