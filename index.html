@@ -4,34 +4,20 @@
 <head>
     <title>Ana Sayfa | DnD5e</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Karma", sans-serif
-        }
-
-        .w3-bar-block .w3-bar-item {
-            padding: 20px
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-
     <!-- Sidebar (hidden by default) -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
-        style="display:none;z-index:2;width:40%;min-width:250px" id="mySidebar">
+        style="display:none;z-index:2;width:40%;min-width:225px" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Kapat</a>
-        <a href="#sinif" onclick="w3_close()" class="w3-bar-item w3-button">Sınıflar</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Hakkında</a>
+        <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Sınıflar</a>
+        <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button">Hakkında</a>
     </nav>
 
     <!-- Top menu -->
@@ -47,81 +33,76 @@
         <!-- First Photo Grid-->
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
             <div class="w3-quarter">
-                <img src="/img/logo/barbarian-logo.png" alt="Barbarian" style="width: 250px; height: 450px;">
+                <img src="/img/logo/barbarian-logo.png" alt="Barbarian" style="width: 225px; height: 350px;">
                 <h3>Barbarian</h3>
                 <p>
                     İlkel arka plana sahip, savaş öfkesine girebilen şiddetli bir savaşçı
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/bard-avatar.png" alt="Bard" style="width: 250px; height: 450px;">
+                <img src="/img/logo/bard-logo.png" alt="Bard" style="width: 225px; height: 350px;">
                 <h3>Bard</h3>
                 <p>
                     Gücü yaratılışın müziğini yankılayan ilham verici bir sihirbaz
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/cleric-avatar.png" alt="Cleric" style="width: 250px; height: 450px;">
+                <img src="/img/logo/cleric-logo.png" alt="Cleric" style="width: 225px; height: 350px;">
                 <h3>Cleric</h3>
                 <p>
                     Daha yüksek bir gücün hizmetinde ilahi büyü kullanan bir rahip şampiyonu
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/druid-avatar.png" alt="Druid" style="width: 250px; height: 450px;">
+                <img src="/img/logo/druid-logo.png" alt="Druid" style="width: 225px; height: 350px;">
                 <h3>Druid</h3>
-                <p> 
+                <p>
                     Doğanın güçlerini kullanan ve hayvan formlarını benimseyen Old Faith'in(Eski İnanç) bir rahibi
                 </p>
             </div>
+
         </div>
 
         <!-- Second Photo Grid-->
         <div class="w3-row-padding w3-padding-16 w3-center">
+
             <div class="w3-quarter">
-                <img src="/img/fighter-avatar.png" alt="Fighter" style="width: 250px; height: 450px;">
-                <h3>Fighter</h3>
-                <p>
-                    Çeşitli silahlar ve zırhlarla yetenekli bir dövüş ustası
-                </p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/img/monk-avatar.png" alt="Monk" style="width: 250px; height: 450px;">
+                <img src="/img/logo/monk-logo.png" alt="Monk" style="width: 225px; height: 350px;">
                 <h3>Monk</h3>
                 <p>
                     Fiziksel ve ruhsal mükemmellik arayışında vücudun gücünü kullanan bir dövüş sanatları ustası
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/ranger-avatar.png" alt="Ranger" style="width: 250px; height: 450px;">
+                <img src="/img/logo/ranger-logo.png" alt="Ranger" style="width: 225px; height: 350px;">
                 <h3>Ranger</h3>
                 <p>
                     Medeniyetin sınırlarında tehditlerle savaşan bir savaşçı
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/rogue-avatar.png" alt="Rogue" style="width: 250px; height: 450px;">
+                <img src="/img/logo/rogue-logo.png" alt="Rogue" style="width: 225px; height: 350px;">
                 <h3>Rogue</h3>
                 <p>
                     Engelleri ve düşmanları aşmak için gizlilik ve hile kullanan bir alçak
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/sorcerer-avatar.png" alt="Sorcerer" style="width: 250px; height: 450px;">
+                <img src="/img/logo/sorcerer-logo.png" alt="Sorcerer" style="width: 225px; height: 350px;">
                 <h3>Sorcerer</h3>
                 <p>
                     Bir lütuftan veya soydan gelen sihirden yararlanan bir büyücü
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/warlock-avatar.png" alt="Warlock" style="width: 250px; height: 450px;">
+                <img src="/img/logo/warlock-logo.png" alt="Warlock" style="width: 225px; height: 350px;">
                 <h3>Warlock</h3>
                 <p>
                     Düzlem dışı bir varlıkla yapılan pazarlıktan türetilen bir sihir ustası
                 </p>
             </div>
             <div class="w3-quarter">
-                <img src="/img/wizard-avatar.png" alt="Wizard" style="width: 250px; height: 450px;">
+                <img src="/img/logo/wizard-logo.png" alt="Wizard" style="width: 225px; height: 350px;">
                 <h3>Wizard</h3>
                 <p>
                     Gerçekliğin yapılarını manipüle edebilen bilimsel bir sihir kullanıcısı
@@ -132,78 +113,33 @@
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
             <div class="w3-bar">
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Barbarian</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Bard</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Cleric</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Druid</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Monk</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Ranger</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Rogue</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Sorcerer</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Warlock</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">Wizard</a>
             </div>
         </div>
 
-        <hr id="about">
-
-        <!-- About Section -->
-        <div class="w3-container w3-padding-32 w3-center">
-            <h3>About Me, The Food Man</h3><br>
-            <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800"
-                height="533">
-            <div class="w3-padding-32">
-                <h4><b>I am Who I Am!</b></h4>
-                <h6><i>With Passion For Real, Good Food</i></h6>
-                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest
-                    of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed
-                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
-                    fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                    ultricies congue gravida diam non fringilla.</p>
-            </div>
-        </div>
         <hr>
 
         <!-- Footer -->
-        <footer class="w3-row-padding w3-padding-32">
-            <div class="w3-third">
-                <h3>FOOTER</h3>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-            </div>
-
-            <div class="w3-third">
-                <h3>BLOG POSTS</h3>
-                <ul class="w3-ul w3-hoverable">
-                    <li class="w3-padding-16">
-                        <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Lorem</span><br>
-                        <span>Sed mattis nunc</span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Ipsum</span><br>
-                        <span>Praes tinci sed</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third w3-serif">
-                <h3>POPULAR TAGS</h3>
-                <p>
-                    <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-                </p>
-            </div>
+        <footer class="w3-center w3-padding-32">
+            <a href="https://www.dndbeyond.com">
+                <img src="/img/dnd-beyond.png" alt="DnD-Beyond">
+            </a>
+            <br><br><br>
+            <p>Version 1.0.0</p>
+            <br>
+            <br>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
+                    w3.css</a>
+            </p>
         </footer>
 
         <!-- End page content -->
